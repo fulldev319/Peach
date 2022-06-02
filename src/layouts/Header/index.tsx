@@ -2,6 +2,7 @@ import React from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Typography from "@material-ui/core/Typography";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
+import IconButton from "@material-ui/core/IconButton";
 
 import { headerStyles } from "./index.styles";
 
@@ -13,7 +14,9 @@ export default function Header() {
       <div className={classes.header}>
         <div className={classes.mainContainer}>
           <Typography variant="h5">Widget Depot</Typography>
-          <AccountCircleIcon fontSize="large" />
+          <IconButton type="submit" aria-label="search">
+            <AccountCircleIcon fontSize="large" />
+          </IconButton>
         </div>
       </div>
     </AppBar>

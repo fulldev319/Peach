@@ -7,7 +7,7 @@ import SearchIcon from "@material-ui/icons/Search";
 
 import { useStyles } from "./index.styles";
 
-export default function SearchBar() {
+export default function SearchBar({ onSearch }) {
   const classes = useStyles();
 
   return (
@@ -15,6 +15,7 @@ export default function SearchBar() {
       <InputBase
         className={classes.input}
         placeholder="Find the widget of your dreams"
+        onChange={onSearch}
       />
       <IconButton
         type="submit"

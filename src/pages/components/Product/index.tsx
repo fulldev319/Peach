@@ -7,15 +7,15 @@ import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import IconButton from "@material-ui/core/IconButton";
 import { useStyles } from "./index.styles";
 
-export default function Product() {
+export default function Product({ product, onProductClick }) {
   const classes = useStyles();
 
   return (
-    <Paper component="div" className={classes.root}>
+    <Paper component="div" className={classes.root} onClick={onProductClick}>
       <Box display={"flex"} flexDirection="column">
-        <Typography variant="subtitle1">WIDGET1</Typography>
+        <Typography variant="subtitle1">{product.name}</Typography>
         <Typography>Price</Typography>
-        <Typography>$750</Typography>
+        <Typography>{product.price}</Typography>
       </Box>
       <IconButton
         type="button"

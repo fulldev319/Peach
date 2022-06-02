@@ -8,6 +8,7 @@ export const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
+    marginBottom: 16,
   },
   iconButton: {
     padding: 10,
