@@ -11,6 +11,7 @@ export const headerStyles = makeStyles((theme) => ({
   },
   mainContainer: {
     width: "100%",
+    padding: "0px 40px",
     maxWidth: 1440,
     display: "flex",
     alignItems: "center",

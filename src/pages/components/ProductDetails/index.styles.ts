@@ -25,6 +25,18 @@ export const useStyles = makeStyles((theme) => ({
       width: "600px",
       height: "400px",
     },
+    [theme.breakpoints.down("sm")]: {
+      "& img": {
+        width: "600px",
+        height: "400px",
+      },
+    },
+    [theme.breakpoints.down("xs")]: {
+      "& img": {
+        width: "300px",
+        height: "200px",
+      },
+    },
   },
   productDetails: {
     display: "flex",

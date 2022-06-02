@@ -10,6 +10,7 @@ export const mainPageStyles = makeStyles((theme) => ({
   mainContainer: {
     width: "100%",
     maxWidth: 1440,
+    padding: "0px 40px",
     display: "flex",
     flexDirection: "column",
   },
@@ -17,6 +18,10 @@ export const mainPageStyles = makeStyles((theme) => ({
     display: "flex",
     flex: 1,
     marginTop: 20,
+    flexDirection: "row",
+    [theme.breakpoints.down("sm")]: {
+      flexDirection: "column",
+    },
   },
   products: {
     width: 300,
