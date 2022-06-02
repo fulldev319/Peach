@@ -32,6 +32,7 @@ function Main() {
               <Product
                 product={product}
                 onProductClick={() => setSelectedProduct(product)}
+                isSelected={index === selectedProduct.no - 1}
               />
             ))}
           </div>

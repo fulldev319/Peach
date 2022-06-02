@@ -18,7 +18,7 @@ export default function SearchBar({ onSearch }) {
         onChange={onSearch}
       />
       <IconButton
-        type="submit"
+        type="button"
         className={classes.iconButton}
         aria-label="search"
       >
