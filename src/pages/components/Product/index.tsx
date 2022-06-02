@@ -20,9 +20,15 @@ export default function Product({ product, isSelected, onProductClick }) {
       onClick={onProductClick}
     >
       <Box display={"flex"} flexDirection="column">
-        <Typography variant="subtitle1">{product.name}</Typography>
-        <Typography>Price</Typography>
-        <Typography>{product.price}</Typography>
+        <Typography variant="subtitle1" color="primary">
+          {product.name}
+        </Typography>
+        <Typography variant="caption" color="textSecondary">
+          Price
+        </Typography>
+        <Typography variant="body1" color="textPrimary">
+          {product.price}
+        </Typography>
       </Box>
       <IconButton
         type="button"

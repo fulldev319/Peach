@@ -1,15 +1,16 @@
 import React from "react";
-// import { ThemeProvider, DefaultTheme } from "@material-ui/styles";
+import { ThemeProvider } from "@material-ui/core/styles";
 import Header from "./layouts/Header";
 import Main from "./pages";
+import { defaultTheme } from "./theme";
 
 function App() {
   return (
     <>
-      {/* <ThemeProvider theme={"DefaultTheme"}> */}
-      <Header />
-      <Main />
-      {/* </ThemeProvider> */}
+      <ThemeProvider theme={defaultTheme}>
+        <Header />
+        <Main />
+      </ThemeProvider>
     </>
   );
 }

@@ -14,13 +14,15 @@ export default function ProductDetails({ product }) {
   return (
     <div className={classes.root}>
       <div className={classes.title}>
-        <Typography>{product.name}</Typography>
+        <Typography variant="h4" color="primary">
+          {product.name}
+        </Typography>
         <IconButton
           type="button"
           className={classes.iconButton}
           aria-label="arrow"
         >
-          <AddShoppingCartIcon fontSize="default" />
+          <AddShoppingCartIcon fontSize="large" color="primary" />
         </IconButton>
       </div>
       <div className={classes.productImage}>
@@ -37,21 +39,37 @@ export default function ProductDetails({ product }) {
           py={1}
         >
           <Box display={"flex"} flexDirection="column" alignItems={"center"}>
-            <Typography>{product.specifications?.dimensions}</Typography>
-            <Typography>Dimensions</Typography>
+            <Typography variant="h6" color="textPrimary">
+              {product.specifications?.dimensions}
+            </Typography>
+            <Typography variant="body2" color="textPrimary">
+              Dimensions
+            </Typography>
           </Box>
           <Box display={"flex"} flexDirection="column" alignItems={"center"}>
-            <Typography>{product.specifications?.weight}</Typography>
-            <Typography>Weight</Typography>
+            <Typography variant="h6" color="textPrimary">
+              {product.specifications?.weight}
+            </Typography>
+            <Typography variant="body2" color="textPrimary">
+              Weight
+            </Typography>
           </Box>
           <Box display={"flex"} flexDirection="column" alignItems={"center"}>
-            <Typography>{product.specifications?.capacity}</Typography>
-            <Typography>Capacity</Typography>
+            <Typography variant="h6" color="textPrimary">
+              {product.specifications?.capacity}
+            </Typography>
+            <Typography variant="body2" color="textPrimary">
+              Capacity
+            </Typography>
           </Box>
         </Box>
       </div>
       <Divider />
-      <div className={classes.productDescription}>{product.description}</div>
+      <div className={classes.productDescription}>
+        <Typography variant="body1" color="textSecondary">
+          {product.description}
+        </Typography>
+      </div>
     </div>
   );
 }

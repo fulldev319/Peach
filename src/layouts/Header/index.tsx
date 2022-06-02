@@ -13,9 +13,9 @@ export default function Header() {
     <AppBar position="fixed">
       <div className={classes.header}>
         <div className={classes.mainContainer}>
-          <Typography variant="h5">Widget Depot</Typography>
+          <Typography variant="h4">Widget Depot</Typography>
           <IconButton type="submit" aria-label="search">
-            <AccountCircleIcon fontSize="large" />
+            <AccountCircleIcon fontSize="large" color="secondary" />
           </IconButton>
         </div>
       </div>

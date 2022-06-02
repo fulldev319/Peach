@@ -6,7 +6,8 @@ export const useStyles = makeStyles((theme) => ({
     width: "100%",
     display: "flex",
     flexDirection: "column",
-    border: "1px solid grey",
+    border: "3px solid #e3e3e3",
+    borderRadius: 8,
   },
   title: {
     display: "flex",
@@ -32,5 +33,6 @@ export const useStyles = makeStyles((theme) => ({
   },
   productDescription: {
     padding: "40px 48px",
+    fontStyle: "italic",
   },
 }));
